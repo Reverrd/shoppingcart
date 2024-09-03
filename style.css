@@ -1,0 +1,142 @@
+:root{
+    --primaryColor: #066de2;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+.overallBody{
+    
+    padding: 0px 40px;
+    /* margin: 0px 30px; */
+    display: flex;
+}
+.rightSide{
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.leftSide{
+    flex: 1;
+    display: flex;
+}
+h2{
+    font-size: 5vw;
+}
+.rightSide p:first-child{
+color: var(--primaryColor);
+font-weight: 700;
+font-size: 0.8rem;
+
+}
+.rightSide p:nth-of-type(2){
+    color: rgb(110, 109, 109);
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.price h3{
+font-size: 1.5rem;
+}
+.price span{
+    color: var(--primaryColor);
+    font-weight: 600;
+    background-color: rgba(6, 164, 226, 0.281);
+    padding: 3px;
+    font-size: small;
+    border-radius: 3px;
+}
+.crossedPrice{
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.836);
+    font-size: small;
+}
+
+h4{
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding-bottom: 10px ;
+}
+.size span{
+    background-color: rgba(128, 128, 128, 0.11);
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: small;
+    font-weight: 700;
+}
+.size span:hover{
+    color: #fff;
+    background-color: black;
+    border-radius: 2px;
+}
+.addCartBtn{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.addCartBtn button{
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    padding: 10px 0;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    background-color: var(--primaryColor);
+}
+.leftSide :first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 5px;
+}
+.leftSide > :first-child img{
+    width: 100%;
+}
+.leftSide > :first-child span{
+    width: 60px;
+    cursor: pointer;
+}
+.leftSide > :first-child span:hover{
+    border:2px solid var(--primaryColor);
+    border-radius: 4px;
+}
+/* -----------Screens------------------ */
+@media screen and (min-width: 700px) {
+    h2{
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .overallBody{
+        display: flex;
+        flex-direction: column;
+     
+    }
+    .rightSide p:first-child{
+        text-align: center;
+        margin-top: 10px;
+    }
+    h2{
+        font-size: 2.45rem;
+    }
+}
